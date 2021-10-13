@@ -175,3 +175,22 @@ if(NOT TARGET tabulate)
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
     $<BUILD_INTERFACE:${tabulate_SOURCE_DIR}>)
 endif()
+
+
+
+#######################################################
+#
+# rapidjson
+#
+#######################################################
+if(NOT TARGET rapidjson)
+  set(rapidjson_BINARY_DIR "${PROJECT_BINARY_DIR}/extern/rapidjson")
+  set(rapidjson_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/rapidjson")
+
+  add_library(rapidjson INTERFACE)
+  add_library(rapidjson::rapidjson ALIAS rapidjson)
+  target_compile_features(rapidjson INTERFACE cxx_std_17)
+  target_include_directories(rapidjson INTERFACE
+    $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
+    $<BUILD_INTERFACE:${rapidjson_SOURCE_DIR}>)
+endif()

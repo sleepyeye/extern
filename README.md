@@ -37,13 +37,14 @@ Since I don't want to repeat this every time, I created this project.
 # List of libraries
 
 
-| Library       | cmake target       | Version | Link |
-|---------------|--------------------|---------|------|
-| Eigen         | Eigen3::Eigen      | TBD     |      |
-| glad          | glad::glad         | TBD     |      |
-| imgui         | imgui::imgui       | TBD     |      |
-| lzfse         | lzfse::lzfse       | TBD     |      |
-| tabulate      | tabulate::tabulate | TBD     |      |
-| stbimage      | stb::stbimage      | TBD     |      |
-| tinyply       | tiny::ply          | TBD     |      |
-| tinyobjaloder | tiny::objloader    | TBD     |      |
+| Library       | cmake target         | Version | Link |
+|---------------|----------------------|---------|------|
+| Eigen         | Eigen3::Eigen        | TBD     |      |
+| glad          | glad::glad           | TBD     |      |
+| imgui         | imgui::imgui         | TBD     |      |
+| lzfse         | lzfse::lzfse         | TBD     |      |
+| tabulate      | tabulate::tabulate   | TBD     |      |
+| stbimage      | stb::stbimage        | TBD     |      |
+| tinyply       | tiny::ply            | TBD     |      |
+| tinyobjaloder | tiny::objloader      | TBD     |      |
+| rapidjson     | rapidjson::rapidjson | TBD     |      |
